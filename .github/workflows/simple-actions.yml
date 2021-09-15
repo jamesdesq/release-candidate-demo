@@ -1,6 +1,8 @@
 name: Simple Actions
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs: 
   build:
