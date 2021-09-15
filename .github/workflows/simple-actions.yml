@@ -18,8 +18,11 @@ jobs:
     # requires a copy of your code
     - uses: actions/checkout@v2
 
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Have we got node?
+      run: node -v
+      
+    - name: Have we got NPM?
+      run: npm -v
       
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
