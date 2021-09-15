@@ -31,7 +31,7 @@ jobs:
       run: cd demo-application && npm install
 
     - name: Build the app
-      run: pwd && ng build
+      run: cd demo-application && ng build
     
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
