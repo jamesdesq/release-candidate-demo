@@ -2,7 +2,7 @@ name: Simple Actions
 
 on:
   push:
-    branches: [ main ]
+    branches: [ develop ]
 
 jobs: 
   build:
@@ -32,9 +32,8 @@ jobs:
       with:
         args: --acl public-read --delete
       env:
-        AWS_S3_BUCKET: gha-demo-bucket
+        AWS_S3_BUCKET: dev-gha-demo-bucket
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: eu-west-2
         SOURCE_DIR: "demo-application/dist/demo-application"
-    
