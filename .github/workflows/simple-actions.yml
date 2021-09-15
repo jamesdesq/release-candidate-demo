@@ -18,6 +18,9 @@ jobs:
 
     - name: Run a one-line script
       run: echo Hello, world!
+      
+    - name: Betray a secreyt
+      run: echo The secret is ${{default-environment.MY_FIRST_SECRET}}
 
     - name: Run a multi-line script
       run: | 
