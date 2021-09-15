@@ -3,7 +3,8 @@ name: Simple Actions
 on:
   push:
     branches: [ develop ]
-
+  workflow_dispatch:
+    
 jobs: 
   build:
     # A runner is any machine with GHA installed
