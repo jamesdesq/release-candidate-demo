@@ -10,6 +10,8 @@ export class NewPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    console.log('This code is terrible');
   }
 
 }
